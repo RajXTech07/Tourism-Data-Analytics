@@ -1,4 +1,4 @@
-Kaggle dataset of Destinations.
+Kaggle dataset of Destinations. # Very large dataset.
 
 Download dataset from:
 https://drive.google.com/file/d/123tZCo--_9XPPff5NcWWiMNGjHYyW13c/view?usp=drive_link
