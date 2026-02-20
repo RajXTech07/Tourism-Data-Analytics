@@ -5,21 +5,19 @@ __pycache__/
 # Virtual environment
 venv/
 
-# Ignore trained models
+# Ignore models
 models/
 *.pkl
 
-# Ignore RAW data (large files)
-data/raw/
+# Ignore ONLY heavy image folder
+data/raw/Indian-monuments/
 
-# Keep processed data
+# Keep datasets
+!data/raw/*.csv
 !data/processed/
+!data/processed/*.csv
 
 # Notebook cache
 .ipynb_checkpoints/
-
-# OS files
-.DS_Store
-Thumbs.db
 
 tempCodeRunnerFile.py
