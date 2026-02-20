@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Ignore trained models
+models/
+*.pkl
+
+# Ignore RAW data (large files)
+data/raw/
+
+# Keep processed data
+!data/processed/
+
+# Notebook cache
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
