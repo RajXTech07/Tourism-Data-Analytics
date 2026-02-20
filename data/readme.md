@@ -12,3 +12,10 @@ Kaggle dataset of Reviews:
 
 Download dataset from:
 https://drive.google.com/file/d/1PkOfLYqMZPcJUkoXWu8bt7ctMLvMzFYS/view?usp=drive_link
+
+Kaggle Image dataset of Indian-Monuments:
+
+Download dataset from:
+https://drive.google.com/drive/folders/1CoDPV5Ciiw_gkJ7RuXTh-08KL3RVUthF?usp=drive_link
+
+
