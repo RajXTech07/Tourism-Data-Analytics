@@ -21,3 +21,6 @@ data/raw/Indian-monuments/
 .ipynb_checkpoints/
 
 tempCodeRunnerFile.py
+
+data/raw/
+data/processed/clean_reviews.csv
