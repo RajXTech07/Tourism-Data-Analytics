@@ -19,7 +19,6 @@ price_model = pickle.load(open(
 
 sentiment_model = pickle.load(open(
     "models/sentiment_model.pkl","rb"
-
 ))
 
 vectorizer = pickle.load(open(
