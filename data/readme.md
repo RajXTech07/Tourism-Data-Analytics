@@ -5,7 +5,7 @@
 </p>
 
 
-Kaggle dataset of Destinations. # Very large dataset.
+Kaggle dataset of Destinations.
 
 Download dataset from:
 https://www.kaggle.com/datasets/saketk511/travel-dataset-guide-to-indias-must-see-places
