@@ -37,6 +37,7 @@ The system helps users explore tourism trends, analyze hotel pricing, evaluate t
 ✅ Sentiment Analysis using NLP
 ✅ Interactive Streamlit Dashboard
 ✅ Monument Image Gallery
+✅ Recommendation system
 ✅ Data Cleaning & Feature Engineering
 ✅ Visualization & Insights
 
