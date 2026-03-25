@@ -1,4 +1,5 @@
 import streamlit as st
+from models.recommender import recommend
 import pandas as pd
 import matplotlib.pyplot as plt
 import pickle
@@ -153,6 +154,20 @@ elif menu == "Monument Images":
                     caption=selected_monument,
                     use_container_width=True
                 )
+
+#Recommendation Dashboard
+elif menu == "Recommendation System":
+
+    st.title("🎯 AI Destination Recommendation")
+
+    place = st.selectbox("Select a Destination", dest["Name"].unique())
+
+    if st.button("Get Recommendations"):
+        results = recommend(place)
+
+        st.subheader("Recommended Places:")
+        for r in results:
+            st.write("👉", r)
 
 
         
