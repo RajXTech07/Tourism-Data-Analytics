@@ -34,7 +34,8 @@ menu = st.sidebar.selectbox(
      "Hotels Analysis",
      "Sentiment Analysis",
      "Price Prediction",
-     "Monument Images"]
+     "Monument Images",
+     "Recommendation System"]
 )
 
 #DESTINATIONS ANALYSIS
