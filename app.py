@@ -25,6 +25,27 @@ sentiment_model = pickle.load(open(
 vectorizer = pickle.load(open(
     "models/vectorizer.pkl","rb"
 ))
+#Pkl file.....
+le_city = pickle.load(open("models/le_city.pkl", "rb"))
+le_type = pickle.load(open("models/le_type.pkl", "rb"))
+
+#Features columns
+feature_cols = [col for col in hotel.columns if "Feature" in col]
+
+hotel["all_features"] = hotel[feature_cols].astype(str).agg(" ".join, axis=1)
+
+def extract_type(text):
+    text = text.lower()
+    if "5-star" in text:
+        return "5-star"
+    elif "4-star" in text:
+        return "4-star"
+    elif "3-star" in text:
+        return "3-star"
+    else:
+        return "other"
+
+hotel["Hotel_Type"] = hotel["all_features"].apply(extract_type)
 
 st.title("🌍 Tourism Data Analytics Dashboard")
 
@@ -92,15 +113,27 @@ elif menu == "Sentiment Analysis":
 ## Price Predicition
 
 elif menu == "Price Prediction":
-    st.header("Hotel Price Prediction")
-    
-    rating = st.slider(
-        "Hotel Rating",
-        1.0, 5.0, 4.0
-    )
-    price = price_model.predict([[rating]])[0]
+    st.header("🏨 Hotel Price Prediction")
 
-    st.success(f"Estimated Price ₹ {round(float(price),2)}")
+    # Inputs
+    rating = st.slider("Hotel Rating", 1.0, 5.0, 4.0)
+
+    city = st.selectbox("Select City", hotel["City"].unique())
+    hotel_type = st.selectbox("Select Hotel Type", hotel["Hotel_Type"].unique())
+
+    if st.button("Predict Price"):
+        try:
+            # Encode inputs
+            city_encoded = le_city.transform([city])[0]
+            type_encoded = le_type.transform([hotel_type])[0]
+
+            # Prediction
+            price = price_model.predict([[rating, city_encoded, type_encoded]])[0]
+
+            st.success(f"Estimated Price ₹ {round(float(price), 2)}")
+
+        except Exception as e:
+            st.error(f"Error: {e}")
 
     
 # Monument Images
