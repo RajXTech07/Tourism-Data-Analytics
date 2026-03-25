@@ -66,7 +66,9 @@ Tourism-Data-Analysis/
 │   └── 03_model_training.ipynb
 │
 ├── models/
+│   ├── recommender.py
 │   ├── price_model.pkl
+│   ├── hotel_price_model.pkl
 │   └── sentiment_model.pkl
 │
 ├── app.py
@@ -168,6 +170,10 @@ Tourism-Data-Analysis/
 * Select monument
 * View categorized images
 
+### Recommendation System
+
+* Recommend Near-by places to visit according to the place. 
+
 ---
 ---
 
@@ -184,7 +190,7 @@ Tourism-Data-Analysis/
 
 * AI Trip Planner
 * Budget Optimization System
-* Tourism Recommendation Engine
+* Tourism Recommendation Engine ✅ [Basic Recommendation system is done]
 * AI Travel Chatbot
 * Real-time Travel Alerts
 * Weather & Event Integration
