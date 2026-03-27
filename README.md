@@ -32,13 +32,13 @@ The system helps users explore tourism trends, analyze hotel pricing, evaluate t
 
 ## 🧠 Key Features
 
-✅ Tourism Destination Analytics
-✅ Hotel Price Prediction Model
-✅ Sentiment Analysis using NLP
-✅ Interactive Streamlit Dashboard
-✅ Monument Image Gallery
-✅ Data Cleaning & Feature Engineering
-✅ Visualization & Insights
+* Tourism Destination Analytics
+* Hotel Price Prediction Model
+* Sentiment Analysis using NLP
+* Interactive Streamlit Dashboard
+* Monument Image Gallery
+* Data Cleaning & Feature Engineering
+* Visualization & Insights
 
 ---
 
